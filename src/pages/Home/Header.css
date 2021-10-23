@@ -1,0 +1,694 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Akronim&family=Josefin+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+
+.header_nav {
+  width: 100%;
+  height: auto;
+  font-weight: normal;
+  font-family: 'Raleway', sans-serif;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.navbar {
+  background: linear-gradient(to right, #06527e, #06456a);
+  height: 70px;
+  overflow: hidden;
+}
+.navjs {
+  display: block;
+  overflow: auto;
+}
+.navbar ul {
+  display: flex;
+  width: 100%;
+  margin-top: 13px;
+  min-width: 696px;
+  list-style: none;
+}
+
+.header_nav #yon_menu li a {
+  color: white;
+}
+.header_nav #yon_menu li a:hover {
+  color: blue;
+}
+
+.navbar ul li a {
+  display: block;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+}
+.navbar ul li a:active {
+  display: block;
+  color: red;
+  font-weight: 600;
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+}
+.navbar ul li a:hover {
+  color: rgb(177, 177, 177);
+}
+.logo {
+  display: none;
+}
+.logo h1 {
+  color: gold;
+  font-size: 28px;
+}
+.menu {
+  display: none;
+}
+.menu_button {
+  color: white;
+  display: none;
+  font-size: 40px;
+  cursor: pointer;
+}
+.close {
+  color: white;
+  position: absolute;
+  left: 87.78%;
+  right: 8.61%;
+  top: 5.62%;
+  bottom: 92.34%;
+}
+.menu2 {
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .menu_button {
+    display: block;
+  }
+  .menu {
+    display: block;
+  }
+  .navbar {
+    display: none;
+  }
+  .menu2 {
+    display: none;
+  }
+  .logo {
+    display: block;
+  }
+}
+/* //////////////////////////////////////////////////////////////   HEADER_MAIN   //////////////////////// */
+
+.header_main {
+  width: 100%;
+  height: 500px;
+  background: url('../../img/vasily-koloda-8CqDvPuo_kI-unsplash.jpg') no-repeat
+    center center/cover;
+  position: relative;
+}
+
+.header_main h3 {
+  color: white;
+  font-weight: 700;
+  text-align: center;
+  max-width: 600px;
+  z-index: 1;
+}
+.header_main .parda {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.315);
+  animation: parda 1.5s normal;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+@keyframes parda {
+  from {
+    transform: translate(100%);
+  }
+  to {
+    transform: translate(0);
+  }
+}
+
+.phone_icon {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  animation: ring 4s 0.7s ease-in-out infinite;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.card2 {
+  display: flex;
+  padding: 20px 15px;
+  max-height: 300px;
+  border: 1px solid rgb(235, 232, 232);
+  border-radius: 10px;
+  background: white;
+  box-shadow: 5px 5px 5px -5px grey;
+  margin-top: 10px;
+}
+.card2 img {
+  display: inline;
+  width: 40%;
+  border-radius: 5px;
+}
+.card2 .card-body {
+  display: inline;
+}
+.card2 a:hover {
+  background: rgb(78, 78, 206);
+  border-radius: 66.92px;
+  transition: 0.5s;
+}
+/* @keyframes link {
+  0% { border-radius:0%; }
+  5% { border-radius:2.5%; }
+  10% { border-radius:5%; }
+  15% { border-radius:7.5%; }
+  20% { border-radius:10%; }
+  25% { border-radius:12.5%; }
+  30% { border-radius:15%; }
+  35% { border-radius:17.5%; }
+  40% { border-radius:20%; }
+  45% { border-radius:22.5%; }
+  50% { border-radius:25%; }
+  55% { border-radius:27.5%; }
+  60% { border-radius:30%; }
+  65% { border-radius:32.5%; }
+  70% { border-radius:35%; }
+  75% { border-radius:37.5%; }
+  80% { border-radius:40%; }
+  85% { border-radius:42.5%; }
+  90% { border-radius:45%; }
+  95% { border-radius:47.5%; }
+  100% { border-radius:50%; }
+} */
+.school_news {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  display: flex;
+  justify-content: start;
+  align-items: end;
+  margin: 20px 0px;
+  cursor: pointer;
+  overflow: hidden;
+}
+.school_news .school_news_opacity {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.267);
+  transition: 0.5s;
+}
+.school_news:hover .school_news_opacity {
+  opacity: 1;
+  transition: 0.5s;
+  position: absolute;
+  top: 0;
+}
+.school_news p {
+  margin-left: 30px;
+  margin-bottom: 60px;
+  z-index: 1;
+  color: white;
+  max-width: 200px;
+}
+.school_news img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.school_news:hover img {
+  transition: 0.4s;
+  transform: scale(1.05);
+}
+.school_news h2 {
+  background: blue;
+  color: white;
+  position: absolute;
+  font-size: 18px;
+  padding: 0 5px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.school_news .date_icon {
+  color: white;
+  font-size: 18px;
+  z-index: 1;
+}
+
+.school_news h4 {
+  color: white;
+  font-size: 18px;
+  position: absolute;
+  top: 60px;
+  right: 30px;
+  z-index: 1;
+}
+.arrow_icon {
+  transform: translate(-300px);
+  opacity: 0;
+  transition: 0.2s;
+}
+.arrow_link {
+  width: 80%;
+}
+.arrow_link:hover .arrow_icon {
+  transform: translate(0px);
+  opacity: 1;
+  transition: 0.2s;
+}
+.media_tab {
+  margin-top: 30px;
+}
+.best_pupils_card {
+  width: 100%;
+  height: 350px;
+  position: relative;
+  background: rgb(243, 240, 240);
+  overflow: hidden; /* 
+  border: 1px green solid; */
+  border-top-right-radius: 45px;
+  border-bottom-left-radius: 45px;
+  box-shadow: -10px -10px 10px -10px green;
+}
+.teacher_card {
+  width: 100%;
+  height: 174px;
+  border: 1px gray solid;
+  display: flex;
+  justify-content: end;
+  padding: 0px 15px;
+  align-items: center;
+  position: relative;
+  border-top-left-radius: 45px;
+  border-bottom-right-radius: 45px;
+  overflow: hidden;
+  margin-top: 5px;
+}
+.teacher_lenta {
+  transform: rotate(-45deg);
+  width: 300px;
+  height: 17px;
+  position: absolute;
+  top: -20px;
+  left: -50px;
+}
+.flag_blue {
+  width: 100%;
+  height: 5px;
+  background: blue;
+}
+.flag_red {
+  width: 100%;
+  height: 1px;
+  background: red;
+}
+.flag_white {
+  width: 100%;
+  height: 5px;
+  background: white;
+}
+.flag_green {
+  width: 100%;
+  height: 5px;
+  background: green;
+}
+.teacher_card img {
+  width: 250px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+}
+.teacher_card_body {
+  max-width: 200px;
+  margin-right: 50px;
+}
+.teacher_card_body h3 {
+  font-size: 20px;
+}
+.best_pupils_card h3 {
+  margin-top: 15px;
+  font-size: 20px;
+  font-style: italic;
+  margin-left: 10px;
+}
+.best_pupils_card .pupil_lenta {
+  background: blue;
+  color: white;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 30px;
+  right: -200px;
+  transform: rotate(45deg);
+}
+.best_pupils_card img {
+  width: 100%;
+  height: 200px;
+}
+.best_pupils_card p {
+  position: absolute;
+  right: 20px;
+  font-size: 35px;
+  bottom: -30px;
+  color: green;
+}
+.qabul {
+  min-height: 400px;
+  margin: 20px 0px;
+  background: linear-gradient(to right, rgb(163, 163, 245), blue);
+}
+.qabul_link,.qabul .btn-primary{
+  overflow: hidden;
+  margin-left:40px;
+  margin-bottom: 40px;
+  background: rgba(0, 0, 0, 0);
+  border: 1px blue  solid;
+  border-radius: 0;
+  font-weight: 550;
+}
+.qabul h1{
+  color: white;
+  font-size: 42px;
+  margin-top: 40px;
+  margin-left:40px;
+  font-family: Josephin-sans;
+  text-transform: uppercase;
+}
+.qabul span{
+  color: white;
+  font-size: 30px;
+  margin-left:40px;
+}
+
+.qabul p{
+  color: white;
+  font-size: 18px;
+  margin-left:40px;
+}
+.checklist{
+  display: block;
+  color: white;
+  font-size: 270px;
+}
+.fast{
+  height: 100%;
+  width: 30px;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.541),white);
+  position: absolute;
+  top: 0;
+  transform: translate(-50px);
+}
+.qabul_link:hover .fast{
+  position: absolute;
+  top: 0;
+  transform: translate(200px);
+  transition: 0.3s;
+}
+.tadbir_card{
+  width: 100%;
+  height: 300px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 10px;
+  padding: 30px 30px;
+}
+.tadbir_link{
+  text-decoration: none;
+  font-size: 30px;
+}
+.maktab_tadbirlari{
+  color: blue;
+  margin: 60px 0px 0px 0px;
+}
+.tadbir_card .parda{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgb(0, 0, 0);
+  opacity: 0;
+}
+.tadbir_card img{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: 0.9s;
+}
+.tadbir_card:hover img{
+  transform:scale(1.1);
+  transition: 0.9s;
+}
+.tadbir_card h3{
+  color: blue;
+  font-weight: 700;
+  font-style:oblique;
+  margin-bottom: 110px;
+}
+
+.tadbir_card p{
+  color: white;
+  transform: translate(-200px);
+  transition: 0.4s;
+  
+}
+.tadbir_card:hover .parda{
+  opacity:0.3;
+}
+.tadbir_card:hover h3{
+  color: rgb(252, 252, 252);
+  transition: 1.4s;
+  z-index:1;
+}
+.tadbir_card:hover  p{
+  transition: 0.4s;
+  transform: translate(0px);
+}
+.swipe_element{
+  width: 60px;
+  height: 50px;
+
+}
+.swipe_element img{
+  width: 100%;
+  height: 100%;
+}
+.toolpat {
+  border-radius: 10%;
+  padding: 5px;
+  width: 200px;
+  min-height: 200px;
+  margin: auto;
+}
+.sliderHomiy {
+  width: 100%;
+  height: max-content;
+  text-align: center;
+  background: white;
+}
+.toolpat img{
+  width: 100%;
+  height:50%;
+  border-radius: 20px;
+}
+.toolpat p{
+  font-size: 14px;
+  margin-top:10px;
+}
+.murojaat{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+form{
+  width: 80%;
+  border:1px solid grey;
+  height: 500px;
+  background: blue;
+  padding-top: 30px;
+  border-radius: 20px;
+}
+form .input_box{
+  width: 80%;
+display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 35px;
+  border-radius: 17.5px;
+  background: rgb(50, 50, 245);
+  border: 0px;
+  padding-left:20px ;
+}
+form input{
+  width: 80%;
+  height: 35px;
+  border-top-right-radius: 17.5px;
+  border-bottom-right-radius: 17.5px;
+  background: rgb(50, 50, 245);
+  border: 0px;
+  padding: 15px;
+  margin:none;
+  flex: 1;
+}
+
+form input::placeholder{
+  color:rgb(231, 226, 226);
+  margin-left: 20px;
+}
+form input:focus{
+  outline: none;
+}
+
+form textarea{
+  width: 80%;
+  border: none;
+  background: blue;
+  border-bottom: 1px solid rgb(50, 50, 245);
+  height: 35px;
+  color: white;
+  resize: none;
+}
+
+form textarea:focus{
+  outline: none;
+}
+form textarea::placeholder{
+  color: rgb(204, 196, 196);
+}
+form h1{
+  color: white;
+  max-width: 80%;
+  text-align: center;
+}
+form p{
+  color: rgb(206, 205, 205);
+  max-width: 80%;
+  text-align: center;
+}
+form button.btn-primary{
+  border-radius:66.92px;
+  width: 80%;
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+  position: relative;
+}
+form button .rocket_icon{
+  position: absolute;
+  left :10px;
+}
+.contact_us{
+  color:blue;
+  margin:30px 0px;
+}
+@keyframes ring {
+  0% {
+    transform: rotate(0);
+  }
+  5% {
+    transform: rotate(30deg);
+  }
+  10% {
+    transform: rotate(-28deg);
+  }
+  15% {
+    transform: rotate(34deg);
+  }
+  20% {
+    transform: rotate(-32deg);
+  }
+  25% {
+    transform: rotate(30deg);
+  }
+  30% {
+    transform: rotate(-28deg);
+  }
+  35% {
+    transform: rotate(26deg);
+  }
+  40% {
+    transform: rotate(-24deg);
+  }
+  45% {
+    transform: rotate(22deg);
+  }
+  50% {
+    transform: rotate(-20deg);
+  }
+  55% {
+    transform: rotate(18deg);
+  }
+  60% {
+    transform: rotate(-16deg);
+  }
+  65% {
+    transform: rotate(14deg);
+  }
+  70% {
+    transform: rotate(-12deg);
+  }
+  75% {
+    transform: rotate(10deg);
+  }
+  80% {
+    transform: rotate(-8deg);
+  }
+  85% {
+    transform: rotate(6deg);
+  }
+  90% {
+    transform: rotate(-4deg);
+  }
+  95% {
+    transform: rotate(2deg);
+  }
+  100% {
+    transform: rotate(-1deg);
+  }
+}
+
+@media (max-width: 767px) {
+  .teacher_card {
+    display: flex;
+    flex-direction: column;
+  }
+  .teacher_card img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+  }
+  .teacher_card_body h3 {
+    color: #ffffff;
+  }
+  .teacher_card_body p {
+    color: white;
+  }
+  .teacher_card .teacher_card_body {
+    z-index: 1;
+  }
+  .checklist{
+    display: none;
+  }
+}
