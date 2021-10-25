@@ -116,7 +116,7 @@ function News(props) {
           <div className='container'>
             <div className='row '>
               <div className="row">
-                <h2 className="last_news">
+                <h2 className="last_news" >
                   So'ngi yangiliklar
                 </h2>
               </div>
@@ -125,7 +125,7 @@ function News(props) {
                   {/* <NavLink  to='/new' > */}
                   <div className='card news_card' onClick={() => gotonews(key)}>
                     <img src={val.image} class='card-img-top' alt='...' />
-                    <div className='card-body'>
+                    <div className='card_body'>
                       <p className=' d-flex align-items-center'>
                         <FaRegCalendarAlt className='date_icon' color='blue' />{' '}
                         {val.published_time.substring(0, 10)}

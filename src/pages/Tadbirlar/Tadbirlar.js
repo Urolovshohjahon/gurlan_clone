@@ -20,6 +20,8 @@ import new5 from '../../img/13.jpg';
 import { url, user } from '../../host/Host';
 import Global from '../../host/Global';
 import Spinner from '../Spinner/Spinner';
+import {BiTimeFive} from 'react-icons/bi';
+import {GoLocation} from 'react-icons/go';
 
 const news = [
   {
@@ -176,7 +178,7 @@ function Tadbirlar(props) {
           <AiFillPhone fontSize='35px' color='blue' className='phone_icon' />
           <div className='container'>
             <div className='row'>
-              <h1 clasName='last_tadbirlar'>So'ngi tadbirlar</h1>
+              <h2 style={{color:'blue', fontWeight:'700',margin:'auto', marginTop:'20px'}}>So'ngi tadbirlar</h2>
             </div>
             <div className='row '>
               {events.map((val, key) => (
@@ -184,12 +186,21 @@ function Tadbirlar(props) {
                   {/* <NavLink  to='/new' > */}
                   <div className='card news_card' onClick={() => gotonews(key)}>
                     <img src={val.image} class='card-img-top' alt='...' />
-                    <div className='card-body'>
+                    <div className='card_body'>
+                    <h5 className='card-title' style={{color:'blue'}}>{val.title}</h5>
                       <p className=' d-flex align-items-center'>
+                        
                         <FaRegCalendarAlt className='date_icon' color='blue' />{' '}
                         {val.published_time.substring(0, 10)}
                       </p>
-                      <h5 className='card-title'>{val.title}</h5>
+                      
+                      
+                      <p>
+                        <BiTimeFive color='blue' /> {val.time}
+                      </p>
+                      <p>
+                        <GoLocation color='blue' /> {val.address}
+                      </p>
                     </div>
                   </div>
                   {/* </NavLink> */}

@@ -44,16 +44,16 @@ function Header_nav() {
             href='/'
             className='text-decoration-none'
           >
-            Yangiliklar
+            Bosh sahifa
           </a>
         </li>
         <li>
           <a
             onClick={changeMenu}
-            href='/media'
+            href='/hayot'
             className='text-decoration-none'
           >
-            Media
+            Maktab hayoti
           </a>
         </li>
         <li>
@@ -66,38 +66,25 @@ function Header_nav() {
           </a>
         </li>
         <li>
-          <a onClick={changeMenu} href='/' className='text-decoration-none'>
-            Bosh Sahifa
+          <a onClick={changeMenu} href='/news' className='text-decoration-none'>
+            Yangiliklar
           </a>
         </li>
         <li>
-          <a onClick={changeMenu} href='#y' className='text-decoration-none'>
-            Hududlar
-          </a>
-        </li>
-        <li>
-          <a
-            onClick={changeMenu}
-            href='/tashkilotlar'
-            className='text-decoration-none'
-          >
-            Tashkilotlar
-          </a>
-        </li>
-        <li>
-          <a onClick={changeMenu} href='#q' className='text-decoration-none'>
-            Sayyohlik
+          <a onClick={changeMenu} href='/rahbariyat' className='text-decoration-none'>
+            Maktab ma'muriyati
           </a>
         </li>
         <li>
           <a
             onClick={changeMenu}
-            href='#aloqa'
+            href='/alochilar'
             className='text-decoration-none'
           >
-            Aloqa
+            Maktab a'lochilari
           </a>
         </li>
+        
       </ul>
 
       

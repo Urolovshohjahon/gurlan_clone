@@ -51,6 +51,7 @@
   cursor:pointer;
   height: 400px;
   box-shadow: 5px 5px 5px -5px grey;
+  background: white;
 }
 .news_card:hover img{
   transform: scale(1.05);
@@ -62,13 +63,15 @@
   transition: 0.5s;
 }
 
-.news_card .card-body{
-  background: #2683ee;
+.news_card .card_body{
+  background: white;
   height: 45%;
+  padding: 5% 5%;
 }
 .last_news{
   color: blue;
   font-weight: 700;
+  margin-top: 20px;
 }
 .card{
   background: white;
