@@ -95,7 +95,10 @@
   font-size: 20px;
 }
 
-
+.last_tadbirlar{
+  color: blue;
+  font-weight: 700;
+}
 
 
 @media (max-width: 767px) {

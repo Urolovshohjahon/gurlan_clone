@@ -18,6 +18,7 @@ import Tadbirlar from './pages/Tadbirlar/Tadbirlar';
 import Tadbir from './pages/Tadbirlar/Tadbir';
 import Gallery from './pages/Gallery/Gallery';
 import Yutuqlar from './pages/Yutuqlar/Yutuqlar';
+import Error from './pages/Error/Error';
 export default class App extends Component {
   state = {
     loader: false,
@@ -91,6 +92,9 @@ export default class App extends Component {
               </Route>
               <Route path='/yutuqlar'>
                 <Yutuqlar />
+              </Route>
+              <Route path='*' >
+                <Error/>
               </Route>
             </Switch>
           </BrowserRouter>

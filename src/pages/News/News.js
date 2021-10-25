@@ -115,6 +115,11 @@ function News(props) {
           ></a>
           <div className='container'>
             <div className='row '>
+              <div className="row">
+                <h2 className="last_news">
+                  So'ngi yangiliklar
+                </h2>
+              </div>
               {news.map((val, key) => (
                 <div className='col-lg-4'>
                   {/* <NavLink  to='/new' > */}

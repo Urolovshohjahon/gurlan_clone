@@ -423,7 +423,10 @@ function Header() {
             </div>
           </div>
           <div className='container'>
-            <div className='row'>
+            <div className='row d-flex justify-content-between'>
+            <div className="col-lg-12">
+                <h2 className="maktab_tadbirlari">Ustozlar doskasi</h2>
+              </div>
               {excellent !== [] && sinf !== []
                 ? excellent.map((item) => {
                     var pupil = setPupils(item.pupil);
@@ -446,8 +449,13 @@ function Header() {
                     );
                   })
                 : ''}
-
-              <div className='col-lg-6 d-flex flex-column '>
+            </div>
+            <div className="row">
+              <div className="col-lg-12">
+                <h2 className="maktab_tadbirlari">Ustozlar doskasi</h2>
+              </div>
+            <div className='col-lg-6  '>
+                
                 <div className='teacher_card'>
                   <img src={rasm2} alt='...' />
                   <div className='teacher_lenta'>
@@ -463,7 +471,9 @@ function Header() {
                   </div>
                   <h4></h4>
                 </div>
-                <div className='teacher_card'>
+              </div>
+              <div className="col-lg-6">
+              <div className='teacher_card'>
                   <img src={rasm2} alt='...' />
                   <div className='teacher_lenta'>
                     <div className='flag_blue'></div>

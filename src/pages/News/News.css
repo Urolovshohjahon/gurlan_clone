@@ -63,10 +63,16 @@
 }
 
 .news_card .card-body{
-  background: rgb(236, 235, 235);
+  background: #2683ee;
   height: 45%;
 }
-
+.last_news{
+  color: blue;
+  font-weight: 700;
+}
+.card{
+  background: white;
+}
 
 
 
