@@ -80,7 +80,7 @@ function Header() {
         console.log('1-School bu', res.data);
         setTimeout(() => {
           setLoader(false);
-        }, 2000);
+        }, 1500);
       })
       .catch((err) => {
         console.log('Maktabda xatolik bor');
@@ -129,7 +129,9 @@ function Header() {
       .get(`${url}/class/`)
       .then((res) => {
         setSinf(res.data);
-        setLoader(false);
+        setTimeout(() => {
+          setLoader(false);
+        }, 1500);
         console.log('5-', res.data);
       })
       .catch((err) => {
@@ -192,9 +194,9 @@ function Header() {
   useEffect(() => {
     getNew();
     getSchool();
-    window.addEventListener('load', () => {
+    /* window.addEventListener('load', () => {
       setLoader(false);
-    });
+    }); */
 
     /*  setInterval(() => {
       setState({ clock: Clock() });
@@ -202,7 +204,7 @@ function Header() {
 
     getExcellents();
     getPupils();
-    setLoader(false);
+    /* setLoader(false); */
     getSchool();
     getEvent();
   }, []);
@@ -210,7 +212,7 @@ function Header() {
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
-      breakpoint: { max: 4000, min: 3000 },
+      breakpoint: { max: 1500, min: 3000 },
       items: 6,
     },
     desktop: {
@@ -423,9 +425,9 @@ function Header() {
             </div>
           </div>
           <div className='container'>
-            <div className='row d-flex justify-content-between'>
+            <div className='row d-flex justify-content-around'>
             <div className="col-lg-12">
-                <h2 className="maktab_tadbirlari">Ustozlar doskasi</h2>
+                <h2 className="maktab_tadbirlari">A'lochilar doskasi</h2>
               </div>
               {excellent !== [] && sinf !== []
                 ? excellent.map((item) => {

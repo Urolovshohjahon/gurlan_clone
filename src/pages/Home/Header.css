@@ -214,7 +214,7 @@
   position: absolute;
   top: 0;
   z-index: 1;
-  background: rgba(0, 0, 0, 0.267);
+  background: rgba(0, 0, 0, 0.767);
   transition: 0.5s;
 }
 .school_news:hover .school_news_opacity {
@@ -246,11 +246,15 @@
   background: blue;
   color: white;
   position: absolute;
-  font-size: 18px;
-  padding: 0 5px;
+  font-size: 20px;
+  padding: 0 10px;
   top: 0;
   left: 0;
   z-index: 1;
+  height: 40px;
+  display: flex;
+  align-items: center;
+font-weight: 500;
 }
 .school_news .date_icon {
   color: white;
@@ -438,6 +442,7 @@
   overflow: hidden;
   border-radius: 10px;
   padding: 30px 30px;
+  margin-bottom: 30px;
 }
 .tadbir_link{
   text-decoration: none;
@@ -533,11 +538,12 @@
   margin-bottom: 30px;
 }
 form{
-  width: 80%;
+  width: 75%;
   border:1px solid grey;
   height: 500px;
   background: blue;
-  padding-top: 30px;
+  padding-top: 20px;
+  padding-bottom:10px;
   border-radius: 20px;
 }
 form .input_box{
