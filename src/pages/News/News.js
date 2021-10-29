@@ -2,14 +2,10 @@ import React, { useEffect, useState } from 'react';
 import HEADER_NAV from '../Home/Header_nav';
 import Footer from '../Footer/Footer';
 import './News.css';
-import { AiFillPhone } from 'react-icons/ai';
 import { Carousel } from 'react-bootstrap';
-import rasm2 from '../../img/news.jpg';
 import { FaRegCalendarAlt } from 'react-icons/fa';
 import { connect, useDispatch } from 'react-redux';
 import { useHistory } from 'react-router-dom';
-import { NavLink } from 'react-router-dom';
-import Aos from 'aos';
 import 'aos/dist/aos.css';
 import axios from 'axios';
 import { url, user } from '../../host/Host';
@@ -17,23 +13,7 @@ import { getNews } from '../../host/Config';
 import school1 from '../../img/school1.jpg';
 import Spinner from '../Spinner/Spinner';
 
-/* const news = [
-  {
-    title: 'YAngilik1',
-    main: 'Yangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopzVVVYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kop',
-    img: 'https://agitated-lamport-037c23.netlify.app/static/media/3s-Photo-3.c4a2f2b9.jpg',
-  },
-  {
-    title: 'YAngilik2',
-    main: 'Yangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopzVVVYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kop',
-    img: 'https://agitated-lamport-037c23.netlify.app/static/media/1.feb51666.jpg',
-  },
-  {
-    title: 'YAngilik3',
-    main: 'Yangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopzVVVYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kopYangiliklar kop',
-    img: 'https://agitated-lamport-037c23.netlify.app/static/media/love.042dfb21.jpg',
-  },
-]; */
+
 
 function News(props) {
   const [loader, setLoader] = useState(true);

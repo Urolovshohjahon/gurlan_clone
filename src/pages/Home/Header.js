@@ -17,15 +17,12 @@ import { getNews } from '../../host/Config';
 import { url, user } from '../../host/Host';
 import Global from '../../host/Global';
 import { getEvents } from '../../host/Config';
-import { Clock } from '../Clock';
 import {
   Clusterer,
   GeolocationControl,
   Map,
   Placemark,
   RouteButton,
-  TrafficControl,
-  TypeSelector,
   YMaps,
   ZoomControl,
 } from 'react-yandex-maps';
@@ -33,8 +30,7 @@ import Footer from '../Footer/Footer';
 import Spinner from '../Spinner/Spinner';
 import YouTube from 'react-youtube';
 import axios from 'axios';
-import Aos from 'aos';
-import { getExcellent, getPupil } from '../../host/Config';
+import {  getPupil } from '../../host/Config';
 import maktab from "../../img/gerb.jpg";
 import her2 from "../../img/h2.jpg";
 import her3 from "../../img/h3.jpg";
@@ -57,20 +53,7 @@ function Header() {
   const [events, setEvents] = useState([]);
   const [number, setNumber] = useState([1, 2, 3]);
 
-  const [state, setState] = useState({
-    loader: true,
-    news: [],
-    id: 0,
-    school: null,
-    clock: '00 : 00 : 00',
-    excellent: [],
-    pupil: [],
-    pupils: [],
-    data: null,
-    sinf: [],
-    events: [],
-    number: [1, 2, 3],
-  });
+
 
   const getSchool = () => {
     axios
@@ -256,7 +239,7 @@ function Header() {
           </div>
           <div className='container'>
             <div className='row d-flex justify-content-center'>
-              <div className='col-md-6'>
+              <div className='col-lg-6 '>
                 <div className='card2 d-flex'>
                   <img
                     src={
@@ -281,7 +264,7 @@ function Header() {
                   </div>
                 </div>
               </div>
-              <div className='col-md-6'>
+              <div className='col-lg-6 '>
                 <div className='card2 d-flex'>
                   <img
                     src={
@@ -306,8 +289,8 @@ function Header() {
                   </div>
                 </div>
               </div>
-              <div className='col-md-6'>
-                <div className='card2 d-flex'>
+              <div className='col-lg-6 '>
+                <div className='card2 d-flex align-items-center'>
                   <img
                     src={
                       school !== null
@@ -434,7 +417,7 @@ function Header() {
                     var pupil = setPupils(item.pupil);
                     var classes = echoClasses(pupil.clas);
                     return (
-                      <div className='col-lg-3'>
+                      <div className='col-lg-4 col-md-6'>
                         <div className='best_pupils_card'>
                           <img
                             src={pupil.image !== null ? pupil.image : rasm2}

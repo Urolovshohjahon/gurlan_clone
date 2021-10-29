@@ -45,7 +45,7 @@ const mapDispatchToProps = (dispatch) => {
         type: 'ENTER_NEWS_PAGE',
         title: news[0].title,
         main: news[0].main,
-        img: news[0].img,
+        img: news[0].img
       }),
   };
 };

@@ -13,7 +13,6 @@ import News from './pages/News/News';
 import New from './pages/News/New';
 import Mamuriyat from './pages/Mamuriyat/Mamuriyat';
 import Alochilar from './pages/Alochilar/Alochilar';
-import  Redux  from './pages/redux';
 import Tadbirlar from './pages/Tadbirlar/Tadbirlar';
 import Tadbir from './pages/Tadbirlar/Tadbir';
 import Gallery from './pages/Gallery/Gallery';
@@ -75,9 +74,7 @@ export default class App extends Component {
               <Route path='/alochilar'>
                 <Alochilar />
               </Route>
-              <Route path='/ana'>
-                <Redux />
-              </Route>
+              
               <Route path='/new'>
                 <New />
               </Route>

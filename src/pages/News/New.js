@@ -1,14 +1,10 @@
 import Footer from '../Footer/Footer';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import HEADER_NAV from '../Home/Header_nav';
 import { AiFillPhone } from 'react-icons/ai';
 import { useHistory } from 'react-router-dom';
 import { FaRegCalendarAlt } from 'react-icons/fa';
-import axios from 'axios';
-import { url, user } from '../../host/Host';
-import { getNews } from '../../host/Config';
-import Spinner from '../Spinner/Spinner';
 const New = (props) => {
   
   const history = useHistory();

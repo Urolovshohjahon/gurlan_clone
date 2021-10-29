@@ -311,3 +311,26 @@
     max-width: 200px;
   }
 }
+
+
+@media(min-width:1500px){
+  .hayot_main {
+    height: 800px;
+  }
+}
+@media(max-width:1199px){
+  .hayot_main {
+    height: 500px;
+  }
+}
+
+
+@media(max-width:767px){
+  
+  .hayot_main {
+    height: 500px;
+  }
+}
+@media(max-width:566px){
+  
+}

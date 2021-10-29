@@ -112,7 +112,7 @@ function Mamuriyat() {
           <div className='qabul_main d-flex justify-content-center align-items-center'>
             <img src={direktor !== null ? direktor[0].image : school1} alt='' />
             <div className='parda'></div>
-            <h3>Qabul uchun ariza topshiring</h3>
+            <h3>Maktabimiz ma'muriyati a'zolari bilan tanishing.</h3>
             <a href={`tel: ${data !== null ? data.phone : '#'}`}>
               {' '}
               <AiFillPhone
@@ -123,10 +123,10 @@ function Mamuriyat() {
             </a>
           </div>
           <div className='container'>
-            <div className='row d-flex justify-content-center'>
-              <div className='col-lg-6'>
+            <div className='row d-flex justify-content-around'>
+              
                 {direktor !== null
-                  ? direktor.map((val) => (
+                  ? direktor.map((val) => (<div className='col-lg-6'>
                       <div className='xodim_card'>
                         <div className='xodim_top'>
                           <h2>Maktab direktori</h2>
@@ -170,12 +170,12 @@ function Mamuriyat() {
                         </div>
                         <img src={val.image} alt='salomlar' />
                       </div>
-                    ))
+                    </div>))
                   : ''}
-              </div>
-              <div className='col-lg-6'>
+              
+              
                 {orin1 !== null
-                  ? orin1.map((val) => (
+                  ? orin1.map((val) => (<div className='col-lg-6'>
                       <div className='xodim_card'>
                         <div className='xodim_top'>
                           <h2>
@@ -223,12 +223,12 @@ function Mamuriyat() {
                         </div>
                         <img src={val.image} alt='salomlar' />
                       </div>
-                    ))
+                    </div>))
                   : ''}
-              </div>
-              <div className='col-lg-6'>
+              
+              
                 {orin2 !== null
-                  ? orin2.map((val) => (
+                  ? orin2.map((val) => (<div className='col-lg-6'>
                       <div className='xodim_card'>
                         <div className='xodim_top'>
                           <h2>
@@ -276,12 +276,12 @@ function Mamuriyat() {
                         </div>
                         <img src={val.image} alt='salomlar' />
                       </div>
-                    ))
+                    </div>))
                   : ''}
-              </div>
-              <div className='col-lg-6'>
+              
+              
                 {orin3 !== null
-                  ? orin3.map((val) => (
+                  ? orin3.map((val) => (<div className='col-lg-6'>
                       <div className='xodim_card'>
                         <div className='xodim_top'>
                           <h2>
@@ -329,12 +329,12 @@ function Mamuriyat() {
                         </div>
                         <img src={val.image} alt='salomlar' />
                       </div>
-                    ))
+                    </div>))
                   : ''}
-              </div>
-              <div className='col-lg-6'>
+              
+              
                 {psixolog !== null
-                  ? psixolog.map((val) => (
+                  ? psixolog.map((val) => (<div className='col-lg-6'>
                       <div className='xodim_card'>
                         <div className='xodim_top'>
                           <h2> Maktab amaliyotchi psixologi</h2>
@@ -378,12 +378,12 @@ function Mamuriyat() {
                         </div>
                         <img src={val.image} alt='salomlar' />
                       </div>
-                    ))
+                    </div>))
                   : ''}
-              </div>
-              <div className='col-lg-6'>
+              
+              
                 {kasaba !== null
-                  ? kasaba.map((val) => (
+                  ? kasaba.map((val) => (<div className='col-lg-6'>
                       <div className='xodim_card'>
                         <div className='xodim_top'>
                           <h2> Kasaba uyushma raisi</h2>
@@ -427,12 +427,12 @@ function Mamuriyat() {
                         </div>
                         <img src={val.image} alt='salomlar' />
                       </div>
-                    ))
+                    </div>))
                   : ''}
-              </div>
-              <div className='col-lg-6'>
+              
+              
                 {kutubxona !== null
-                  ? kutubxona.map((val) => (
+                  ? kutubxona.map((val) => (<div className='col-lg-6'>
                       <div className='xodim_card'>
                         <div className='xodim_top'>
                           <h2> Kutubxona mudirasi</h2>
@@ -476,12 +476,12 @@ function Mamuriyat() {
                         </div>
                         <img src={val.image} alt='salomlar' />
                       </div>
-                    ))
+                    </div>))
                   : ''}
-              </div>
-              <div className='col-lg-6'>
+              
+              
                 {chqbt !== null
-                  ? chqbt.map((val) => (
+                  ? chqbt.map((val) => (<div className='col-lg-6'>
                       <div className='xodim_card'>
                         <div className='xodim_top'>
                           <h2>
@@ -528,12 +528,12 @@ function Mamuriyat() {
                         </div>
                         <img src={val.image} alt='salomlar' />
                       </div>
-                    ))
+                    </div>))
                   : ''}
-              </div>
-              <div className='col-lg-6'>
+              
+              
                 {yetakchi !== null
-                  ? yetakchi.map((val) => (
+                  ? yetakchi.map((val) => (<div className='col-lg-6'>
                       <div className='xodim_card'>
                         <div className='xodim_top'>
                           <h2> Boshlang'ich tashkilot yoshlar yetakchisi</h2>
@@ -577,9 +577,9 @@ function Mamuriyat() {
                         </div>
                         <img src={val.image} alt='salomlar' />
                       </div>
-                    ))
+                    </div>))
                   : ''}
-              </div>
+              
             </div>
           </div>
           <Footer />

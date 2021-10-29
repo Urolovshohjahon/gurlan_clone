@@ -266,3 +266,28 @@
     background: rgba(0, 0, 255, 0.452);
   }
 }
+
+
+
+
+@media(min-width:1500px){
+  .qabul_main {
+    height: 800px;
+  }
+}
+@media(max-width:1199px){
+  .qabul_main {
+    height: 500px;
+  }
+}
+
+
+@media(max-width:767px){
+  
+  .qabul_main {
+    height: 500px;
+  }
+}
+@media(max-width:566px){
+  
+}

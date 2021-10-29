@@ -152,8 +152,8 @@
 
 .card2 {
   display: flex;
-  padding: 20px 15px;
-  max-height: 300px;
+  padding: 40px 15px;
+  height: 250px;
   border: 1px solid rgb(235, 232, 232);
   border-radius: 10px;
   background: white;
@@ -210,7 +210,7 @@
 .school_news .school_news_opacity {
   width: 100%;
   height: 100%;
-  opacity: 0;
+  opacity: 1;
   position: absolute;
   top: 0;
   z-index: 1;
@@ -218,7 +218,7 @@
   transition: 0.5s;
 }
 .school_news:hover .school_news_opacity {
-  opacity: 1;
+  opacity: 0;
   transition: 0.5s;
   position: absolute;
   top: 0;
@@ -229,6 +229,26 @@
   z-index: 1;
   color: white;
   max-width: 200px;
+  transition: 0.5s;
+  opacity: 1;
+}
+.school_news h4 {
+  color: white;
+  font-size: 18px;
+  position: absolute;
+  top: 60px;
+  right: 30px;
+  z-index: 1;
+  transition: 0.5s;
+  opacity: 1;
+}
+.school_news:hover p {
+  transition: 0.5s;
+  opacity:0;
+}
+.school_news:hover h4 {
+  transition: 0.5s;
+  opacity:0;
 }
 .school_news img {
   display: block;
@@ -255,6 +275,7 @@
   display: flex;
   align-items: center;
 font-weight: 500;
+width: 100%;
 }
 .school_news .date_icon {
   color: white;
@@ -262,14 +283,7 @@ font-weight: 500;
   z-index: 1;
 }
 
-.school_news h4 {
-  color: white;
-  font-size: 18px;
-  position: absolute;
-  top: 60px;
-  right: 30px;
-  z-index: 1;
-}
+
 .arrow_icon {
   transform: translate(-300px);
   opacity: 0;
@@ -289,6 +303,7 @@ font-weight: 500;
 .best_pupils_card {
   width: 100%;
   height: 350px;
+  margin: 10px 0px;
   position: relative;
   background: rgb(243, 240, 240);
   overflow: hidden; /* 
@@ -707,6 +722,37 @@ form button .rocket_icon{
   }
   .checklist{
     display: none;
+  }
+}
+@media(min-width:1500px){
+  .header_main {
+    height: 800px;
+  }
+}
+@media(max-width:1199px){
+  .header_main {
+    height: 500px;
+  }
+}
+
+
+@media(max-width:767px){
+  form{
+    width: 95%;
+  }
+  .header_main {
+    height: 500px;
+  }
+}
+@media(max-width:566px){
+  .card2 {
+    height: 200px;
+    padding: 15px 10px;
+  }
+  .card2 img {
+    display: inline;
+    width: 45%;
+    border-radius: 5px;
   }
 }
 
