@@ -90,6 +90,7 @@
   font-family: 'Rubik Beastly', cursive;
   margin-top: 30px;
   color: rgb(0, 0, 202);
+  text-align:center;
 }
 .anana p {
   color: blue;
@@ -332,5 +333,17 @@
   }
 }
 @media(max-width:566px){
-  
+  .hayot_main {
+    height: 330px;
+  }
+}
+
+@media(max-width:452px){
+  .hayot_main{
+    padding: 0px 10px;
+  }
+  .hayot_main h3{
+     margin-top: 15px;
+    letter-spacing:3px;
+  }
 }

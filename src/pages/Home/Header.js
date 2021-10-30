@@ -240,7 +240,7 @@ function Header() {
           <div className='container'>
             <div className='row d-flex justify-content-center'>
               <div className='col-lg-6 '>
-                <div className='card2 d-flex'>
+                <div className='card3 d-flex'>
                   <img
                     src={
                       school !== null
@@ -265,7 +265,7 @@ function Header() {
                 </div>
               </div>
               <div className='col-lg-6 '>
-                <div className='card2 d-flex'>
+                <div className='card3 d-flex'>
                   <img
                     src={
                       school !== null
@@ -290,7 +290,7 @@ function Header() {
                 </div>
               </div>
               <div className='col-lg-6 '>
-                <div className='card2 d-flex align-items-center'>
+                <div className='card3 d-flex align-items-center'>
                   <img
                     src={
                       school !== null
@@ -366,12 +366,17 @@ function Header() {
                             : ''
                           : ''
                       }
+                      autoplay={true}
+                      muted={true}
+                      
                       opts={{
                         width: '100%',
                         height: '300px',
+                        
                         playerVars: {
                           // https://developers.google.com/youtube/player_parameters
-                          autoplay: 0,
+                          
+                          rel:0
                         },
                       }}
                       /* className={style.video} */

@@ -289,5 +289,17 @@
   }
 }
 @media(max-width:566px){
-  
+  .qabul_main {
+    height: 330px;
+  }
+}
+
+@media(max-width:452px){
+  .qabul_main{
+    padding: 0px 10px;
+  }
+  .qabul_main h3{
+     margin-top: 15px;
+    letter-spacing:3px;
+  }
 }

@@ -5,6 +5,7 @@ import HEADER_NAV from '../Home/Header_nav';
 import { AiFillPhone } from 'react-icons/ai';
 import { useHistory } from 'react-router-dom';
 import { FaRegCalendarAlt } from 'react-icons/fa';
+import './News.css'
 const New = (props) => {
   
   const history = useHistory();

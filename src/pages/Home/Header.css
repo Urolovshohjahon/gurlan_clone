@@ -150,7 +150,7 @@
   cursor: pointer;
 }
 
-.card2 {
+.card3 {
   display: flex;
   padding: 40px 15px;
   height: 250px;
@@ -160,15 +160,15 @@
   box-shadow: 5px 5px 5px -5px grey;
   margin-top: 10px;
 }
-.card2 img {
+.card3 img {
   display: inline;
   width: 40%;
   border-radius: 5px;
 }
-.card2 .card-body {
+.card3 .card-body {
   display: inline;
 }
-.card2 a:hover {
+.card3 a:hover {
   background: rgb(78, 78, 206);
   border-radius: 66.92px;
   transition: 0.5s;
@@ -745,14 +745,31 @@ form textarea::placeholder{
   }
 }
 @media(max-width:566px){
-  .card2 {
-    height: 200px;
-    padding: 15px 10px;
+  .header_main {
+    height: 330px;
   }
-  .card2 img {
+  
+  /* .card3 img {
     display: inline;
     width: 45%;
+    height: 50%;
     border-radius: 5px;
+  } */
+}
+
+@media(max-width:452px){
+  .card3 {
+    /* height: 250px;
+    padding: 15px 10px; */
+    
+    transform: scaleY(0.8);
+  }
+  .header_main{
+    padding: 0px 10px;
+  }
+  .header_main h3{
+    margin-top: 15px;
+    letter-spacing:3px;
   }
 }
 

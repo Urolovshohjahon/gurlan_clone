@@ -119,7 +119,7 @@
 @media(max-width:567px) {
   .new_card img{
     max-width: 600px;
-    height: 100px;
+    height: 250px;
     margin-bottom: 15px;
   }
 }

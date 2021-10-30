@@ -102,7 +102,7 @@ function Tadbirlar(props) {
         <Spinner />
       ) : (
         <div>
-          <Carousel fade>
+          <Carousel fade prevIcon={<span aria-hidden="true" className="carousel-control-prev-icon" />}>
             <Carousel.Item>
               <img
                 className='d-block w-100'
@@ -111,7 +111,7 @@ function Tadbirlar(props) {
               />
               <Carousel.Caption>
                 <h3>
-                  O‘zbekistonda ilk bor koinotga nano SPUTNIK uchirilmoqda
+                  Tadbirlardan lavhalar
                 </h3>
               </Carousel.Caption>
             </Carousel.Item>
@@ -124,7 +124,7 @@ function Tadbirlar(props) {
 
               <Carousel.Caption>
                 <h3>
-                  Pi sonini hisoblash bo‘yicha yangi jahon rekordi o‘rnatildi
+                  Tadbirlardan lavhalar
                 </h3>
               </Carousel.Caption>
             </Carousel.Item>
@@ -137,8 +137,7 @@ function Tadbirlar(props) {
 
               <Carousel.Caption>
                 <h3>
-                  «Yozyovon suv ombori» atrofidagi qum-barxanlar o‘rnida suv
-                  havzalari tashkil qilinadi
+                  Tadbirlardan lavhalar
                 </h3>
               </Carousel.Caption>
             </Carousel.Item>
@@ -151,7 +150,7 @@ function Tadbirlar(props) {
 
               <Carousel.Caption>
                 <h3>
-                  Muallimning maoshini 1000 dollarga yetkazmaguncha to‘xtamayman
+                  Tadbirlardan lavhalar
                 </h3>
               </Carousel.Caption>
             </Carousel.Item>
@@ -164,7 +163,7 @@ function Tadbirlar(props) {
 
               <Carousel.Caption>
                 <h3>
-                  Biz o‘tgan 5 yilda qo‘rquvdan qutuldik – Shavkat Mirziyoyev
+                  Tadbirlardan lavhalar
                 </h3>
               </Carousel.Caption>
             </Carousel.Item>
