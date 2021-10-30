@@ -199,7 +199,7 @@ function Gallery() {
             </div>
           </div>
           <Footer />
-          <HEADER_NAV />
+          <HEADER_NAV school_number={school.school_number} />
         </div>)
       }
     </div>

@@ -26,8 +26,8 @@ function Mamuriyat() {
   const [kasaba, setKasaba] = useState(null);
   const [yetakchi, setYetakchi] = useState(null);
   const [chqbt, setChqbt] = useState(null);
-  const [loader, setLoader] = useState(null);
-  const [data, setData] = useState(null);
+  const [loader, setLoader] = useState(true);
+  const [data, setData] = useState([]);
   const getSchool = () => {
     var v = user;
     axios.get(`${url}/school-by-admin/${v}`).then((res) => {
@@ -583,7 +583,7 @@ function Mamuriyat() {
             </div>
           </div>
           <Footer />
-          <HEADER_NAV />
+          <HEADER_NAV school_number={data.school_number} />
         </div>
       )}
     </div>

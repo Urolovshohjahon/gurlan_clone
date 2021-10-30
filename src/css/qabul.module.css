@@ -1,0 +1,518 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: white !important;
+}
+.body_makatab {
+ 
+  z-index: -5455;
+}
+.body_makatab * {
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+}
+.dark_maktab {
+  /* background-color: aqua; */
+  width: 100%;
+  height: 100%;
+  margin-top:60px;
+}
+.qabulHeader {
+  background-image: url("https://st.internat.uz/data/articles/1/SHKOLA1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: content-box;
+  width: 100%;
+  height: 95vh;
+}
+.qabul_header {
+  /* background-color: aqua; */
+  width: 100%;
+  height: 95vh;
+  margin: 0;
+}
+.text_q {
+  padding-top: 20%;
+  padding-left: 10%;
+}
+.text_q h1 {
+  font-size: 70px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 0 1px #000;
+  line-height: 100px;
+  letter-spacing: 5px;
+  font-family: "Enriqueta", serif;
+}
+.header_image {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin: 0 30% 0 10%;
+}
+.qabul_image {
+  border-radius: 5px;
+  margin: 5% 0;
+}
+.tavsilotlar{margin-top:80px}
+.tavsilot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+
+}
+.qabul_image {
+  height: 600px;
+  width: 600px;
+}
+.tavsilot img {
+  border-radius: 50%;
+  border: 1px inset;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  margin: 0 10%;
+  box-shadow: 0 0 100px #fff;
+}
+.tavsilottext {
+  padding: 5% !important;
+   background:linear-gradient(rgba(72, 142, 247, 0.974),rgba(3, 52, 177, 0.981),rgb(5, 47, 138), rgb(3, 25, 99));
+  z-index: 2 !important;
+  text-align: justify;
+  box-shadow: 0 0 100px #fff;
+  border-radius: 10px;
+}
+
+.tavsilottext h3 {
+  font-size: 60px;
+  color: #fff;
+  margin-bottom: 3%;
+}
+.tavsilottext p {
+  font-size: 30px;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+  color: #fff;
+  opacity: 0.8;
+}
+
+.talim {
+  width: 100%;
+  margin-bottom: 5%;
+  padding: 5%;
+  text-align: justify;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.info {
+  min-height: 500px;
+  margin: 0 20px;
+  border-radius: 20px;
+  padding: 20px;
+   background:linear-gradient(rgba(72, 142, 247, 0.974),rgba(3, 52, 177, 0.981),rgb(5, 47, 138), rgb(3, 25, 99));
+  box-shadow: 0 0 100px #fff;
+}
+/* .info p{margin-top:20px; font-size:22px} */
+.qabul_talim {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin: auto;
+  margin-top: -100px;
+  border: 3px solid #318ce7;
+}
+.qabul_talim img {
+  width: 80%;
+  height: 80%;
+}
+.info h3 {
+  padding: 2px;
+  font-size: 50px;
+  text-align: center;
+  text-shadow: 0 0 5px #fff;
+}
+.info p {
+  font-size: 30px;
+}
+.jarayon {
+   background:linear-gradient(rgba(72, 142, 247, 0.974),rgba(3, 52, 177, 0.981),rgb(5, 47, 138), rgb(3, 25, 99));
+  box-shadow: 0 0 100px #fff;
+  padding: 2%;
+  min-height: 100%;
+  margin-bottom: 50px;
+}
+.jarayon_text {
+  height: 215px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding-left: 10% !important;
+  padding-right: 10% !important;
+  text-align: center;
+}
+.jarayon_text h3,
+.jarayon h1 {
+  font-size: 40px;
+  text-shadow: 0 0 5px #fff;
+}
+.jarayon_text p {
+  font-size: 30px;
+}
+.line {
+  width: 10%;
+  border-bottom: 3px solid #fff;
+  margin: 0 auto;
+}
+
+.talablar {
+  height: 500px;
+  margin-top: 5%;
+  margin-bottom: 5% !;
+}
+
+.talab {
+  padding-top: 100px !important;
+  z-index: 3;
+}
+.talab img {
+  width: 100% !important;
+  height: 300px;
+  z-index: 3 !important;
+  object-fit: cover;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5);
+}
+.talabtext {
+  width: 100%;
+  padding-left: 5% !important;
+  padding-top: 3%;
+   background:linear-gradient(rgba(72, 142, 247, 0.974),rgba(3, 52, 177, 0.981),rgb(5, 47, 138), rgb(3, 25, 99));
+  height: 510px;
+  padding-right: 5% !important;
+  z-index: 2 !important;
+  text-align: justify;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.talabtext h3 {
+  font-size: 50px;
+  text-shadow: 0 0 5px #fff;
+  color: black;
+  margin-bottom: 3%;
+}
+.talabtext p {
+  font-size: 17.5px;
+  color: black;
+  opacity: 0.8;
+}
+.muddat {
+  padding:0px 5% 5% 5%;
+
+}
+.muddat_header {
+  padding: 5px;
+  padding-bottom: 30px;
+}
+.muddat_header h1 {
+  font-size: 50px;
+  text-shadow: 0 0 5px #fff;
+}
+.muddat_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.muddat_text1,
+.muddat_text2,
+.muddat_text3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 100px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 20px #fff;
+   background:linear-gradient(rgba(72, 142, 247, 0.974),rgba(3, 52, 177, 0.981),rgb(5, 47, 138), rgb(3, 25, 99));
+  border-radius: 10px;
+  height: 200px;
+}
+
+.muddat_text1 h3,
+.muddat_text2 h3,
+.muddat_text3 h3 {
+  font-size: 30px;
+}
+.muddat_text1 p,
+.muddat_text2 p,
+.muddat_text3 p {
+  font-size: 15px;
+}
+
+.hujjat {
+  height: 1000px;
+  background-image: url(../img/hujjat.jfif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: auto;
+  position: relative;
+}
+.hujjat_text {
+  position: absolute;
+  left: 0;
+  top: 5%;
+  right: 50%;
+  bottom: 5%;
+  margin: 20px;
+  padding: 100px;
+   background:linear-gradient(rgba(72, 142, 247, 0.974),rgba(3, 52, 177, 0.981),rgb(5, 47, 138), rgb(3, 25, 99));
+  text-align: justify;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.hujjat_text h3 {
+  font-size: 60px;
+}
+.hujjat_text p {
+  font-size: 30px;
+  line-height:1.5;
+  margin-top:20px
+}
+
+/* media =============*/
+@media screen and (max-width: 1500px) {
+  .text_q h1 {
+    font-size: 50px;
+  }
+  .header_image {
+    display: none;
+  }
+  .qabul_image {
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+  }
+  .tavsilottext h3 {
+    font-size: 30px;
+  }
+  .tavsilottext p {
+    font-size: 15px;
+  }
+  .talim {
+    width: 100%;
+    margin: 5% 0;
+    padding: 5%;
+  }
+  .qabul_talim {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    margin-top: -80px;
+  }
+  .info {
+    min-height: 250px;
+    margin: 0 20px;
+    border-radius: 20px;
+    padding: 20px;
+  }
+  .info h3 {
+    font-size: 25px;
+  }
+  .info p {
+    font-size: 15px;
+  }
+  .jarayon_text h3,
+  .jarayon h1,
+  .jarayon_text p {
+    font-size: 25px;
+  }
+
+  .jarayon {
+    margin-bottom: 0;
+  }
+
+  .tavsilottext {
+    box-shadow: none;
+    border-radius: 0;
+  }
+  .tavsilot > img {
+    border-radius: 0;
+    margin: 0 10%;
+  }
+  .tavsilottext h3 {
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 3%;
+  }
+  .tavsilottext p {
+    font-size: 15px;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    color: #fff;
+  }
+  .muddat_text1,
+  .muddat_text2,
+  .muddat_text3 {
+    margin: 10px;
+  }
+  .hujjat {
+    height: 500px;
+  }
+  .hujjat_text {
+    padding: 20px;
+    margin: 20px;
+     background:linear-gradient(rgba(72, 142, 247, 0.974),rgba(3, 52, 177, 0.981),rgb(5, 47, 138), rgb(3, 25, 99));
+    text-align: justify;
+    border-radius: 10px;
+  }
+  .hujjat_text h3 {
+    font-size: 40px;
+  }
+  .hujjat_text p {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .jarayon_text p {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hujjat_text h3 {
+    font-size: 30px;
+  }
+  .hujjat_text p {
+    text-align: start;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 567px) {
+  .text_q h1 {
+    font-size: 30px;
+  }
+  .qabul_image {
+    height: 200px;
+    width: 200px;
+    border-radius: none;
+  }
+
+  .tavsilot > img {
+    margin: 0;
+  }
+  .tavsilottext h3 {
+    font-size: 20px;
+  }
+  .tavsilottext p {
+    font-size: 10px;
+  }
+  .talim {
+    width: 100%;
+    margin-top: 10%;
+    padding: 5%;
+  }
+  .line {
+    width: 50%;
+  }
+  .qabul_talim {
+    width: 80px;
+    height: 80px;
+    margin: auto;
+    margin-top: -50px;
+  }
+  .info {
+    min-height: 250px;
+    margin: 0 20px;
+    border-radius: 20px;
+    padding: 20px;
+  }
+  .info h3 {
+    font-size: 25px;
+  }
+  .info p {
+    font-size: 15px;
+  }
+  .jarayon_text h3,
+  .jarayon h1 {
+    font-size: 20px;
+  }
+
+  .jarayon_text p {
+    font-size: 15px;
+  }
+  .jarayon {
+    margin-bottom: 0;
+  }
+  .muddat_header h1 {
+    font-size: 30px;
+  }
+  .muddat_text1,
+  .muddat_text2,
+  .muddat_text3 {
+    font-size: 10px;
+    max-height: 100px;
+  }
+  .muddat_text1 h3,
+  .muddat_text2 h3,
+  .muddat_text3 h3 {
+    font-size: 15px;
+  }
+  .muddat_text1 p,
+  .muddat_text2 p,
+  .muddat_text3 p {
+    font-size: 10px;
+  }
+  .hujjat {
+    height: 500px;
+  }
+  .hujjat_text {
+    padding: 20px;
+    margin: 20px;
+     background:linear-gradient(rgba(72, 142, 247, 0.974),rgba(3, 52, 177, 0.981),rgb(5, 47, 138), rgb(3, 25, 99));
+    text-align: justify;
+    border-radius: 10px;
+  }
+  .hujjat_text h3 {
+    font-size: 40px;
+  }
+  .hujjat_text p {
+    font-size: 15px;
+  }
+  .hujjat {
+    min-height: 90vh;
+    background-image: url(../img/hujjat.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    position: relative;
+  }
+  .hujjat_text {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 30px;
+    background-color: rgba(0, 0, 255, 0.5);
+    text-align: justify;
+  }
+  .hujjat_text h3 {
+    font-size: 15px;
+  }
+  .hujjat_text p {
+    font-size: 10 px;
+  }
+}

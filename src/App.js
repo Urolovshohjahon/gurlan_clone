@@ -18,6 +18,10 @@ import Tadbir from './pages/Tadbirlar/Tadbir';
 import Gallery from './pages/Gallery/Gallery';
 import Yutuqlar from './pages/Yutuqlar/Yutuqlar';
 import Error from './pages/Error/Error';
+import Oshxona from './pages/Oshxona/Oshxona';
+import Login from './pages/Login/Login';
+import TeacherCabinet from './pages/TeacherCabinet';
+import Main from './pages/Rahbar/Main'
 export default class App extends Component {
   state = {
     loader: false,
@@ -56,6 +60,19 @@ export default class App extends Component {
         ) : (
           <BrowserRouter>
             <Switch>
+            <Route path="/login">
+                <Login />
+              </Route>
+              {/* <Route path="/cabinet/parents/">
+              <ParentCabinet />
+            </Route> */}
+              <Route path="/cabinet/teacher/bolim/">
+                <TeacherCabinet />
+              </Route>
+
+              <Route path="/cabinet/teacher/rahbar/">
+                <Main />
+              </Route>
               <Route exact path='/'>
                 <Header />
               </Route>
@@ -89,6 +106,9 @@ export default class App extends Component {
               </Route>
               <Route path='/yutuqlar'>
                 <Yutuqlar />
+              </Route>
+              <Route path='/maktaboshxonasi'>
+                <Oshxona />
               </Route>
               <Route path='*' >
                 <Error/>

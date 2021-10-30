@@ -25,7 +25,7 @@ function News(props) {
     var v = user;
     axios.get(`${url}/school-by-admin/${v}`).then((res) => {
       setSchool(res.data);
-      setLoader(false);
+      setTimeout(() => {setLoader(false);},4000)
     });
   };
 
@@ -49,7 +49,7 @@ function News(props) {
   useEffect(() => {
     getNew();
     getSchool();
-  });
+  },[]);
 
   const dispatch = useDispatch();
   const history = useHistory();
@@ -61,7 +61,8 @@ function News(props) {
       main: news[key].text,
       img: news[key].image,
       date:news[key].published_time.substring(0, 10),
-      phone:school.phone
+      phone:school.phone,
+      school_number: school.school_number
     });
     console.log('2');
     history.push('/new');
@@ -119,7 +120,7 @@ function News(props) {
             </div>
           </div>
           <Footer />
-          <HEADER_NAV />
+          <HEADER_NAV school_number={school.school_number} />
         </div>
       )}
     </div>

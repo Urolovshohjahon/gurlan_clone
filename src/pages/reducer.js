@@ -4,14 +4,16 @@ const initialState = {
     main: '',
     img: null,
     phone:null,
-    date:null
+    date:null,
+    school_number:null
   },
   tadbir:{
     title: '',
     main: '',
     img: null,
     phone:null,
-    date:null
+    date:null,
+    school_number:null
   }
 };
 
@@ -24,7 +26,8 @@ const Reducer = (state = initialState, action) => {
           main: action.main,
           img: action.img,
           phone:action.phone,
-          date:action.date
+          date:action.date,
+          school_number:action.school_number
         },
       };
     }
@@ -35,7 +38,8 @@ const Reducer = (state = initialState, action) => {
           main: action.main,
           img: action.img,
           phone:action.phone,
-          date:action.date
+          date:action.date,
+          school_number:action.school_number
         },
       };
     }

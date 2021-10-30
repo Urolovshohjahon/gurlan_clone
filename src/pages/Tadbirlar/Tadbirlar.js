@@ -51,20 +51,22 @@ function Tadbirlar(props) {
     // var a = window.location.href.split("/");
     var v = user;
     axios.get(`${url}/school-by-admin/${v}`).then((res) => {
-      setLoader(false);
       setData(res.data);
+      setTimeout(()=>{setLoader(false)},4000)
+     
     });
     getEvents()
       .then((res) => {
         if (window.location.href.indexOf('id=') === -1) {
           setEvents(res.data);
-          setLoader(false);
+          setTimeout(()=>{setLoader(false)},4000)
         } else {
-          setLoader(false);
+          
           setEvents(res.data);
           setId(
             window.location.href.slice(window.location.href.indexOf('=') + 1)
           );
+          setTimeout(()=>{setLoader(false)},4000)
         }
       })
       .catch((err) => {
@@ -82,7 +84,8 @@ function Tadbirlar(props) {
       main: events[key].text,
       img: events[key].image,
       phone:data.phone,
-      date:events[key].published_time.substring(0,10)
+      date:events[key].published_time.substring(0,10),
+      school_number:data.school_number
     });
     console.log('2');
     history.push('/tadbir');
@@ -209,7 +212,7 @@ function Tadbirlar(props) {
             </div>
           </div>
           <Footer />
-          <HEADER_NAV />
+          <HEADER_NAV school_number={data.school_number} />
         </div>
       )}
     </div>

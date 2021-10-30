@@ -358,7 +358,7 @@ function Hayot() {
             </div>
           </div>
           <Footer />
-          <Header_nav />
+          <Header_nav school_number={data.school_number}/>
         </div>
       )}
     </div>

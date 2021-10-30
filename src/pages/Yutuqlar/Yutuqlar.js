@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Global from '../../host/Global';
-import { url } from '../../host/Host';
 import wins from '../../img/wins.jpg';
 import HEADER_NAV from '../Home/Header_nav';
 import Footer from '../Footer/Footer';
 import './Yutuqlar.css';
 import Spinner from '../Spinner/Spinner';
+import { url, user } from '../../host/Host';
 
 function Yutuqlar() {
+  const [data,setData] = useState([])
   const [loader, setLoader] = useState(true);
   const [qabul, setQabul] = useState([]);
   const [id, setId] = useState(0);
@@ -21,13 +22,21 @@ function Yutuqlar() {
     });
     axios.get(`${url}/pupil/`).then((res) => {
       setStudents(res.data);
-      setLoader(false);
-      console.log(res.data);
+      setTimeout(() => {
+        setLoader(false);
+      }, 4000);
     });
   };
 
   useEffect(() => {
     getSchool();
+    var v = user;
+    axios.get(`${url}/school-by-admin/${v}`).then((res) => {
+      setData(res.data);
+      setTimeout(() => {
+        setLoader(false);
+      }, 2000);
+    });
   });
 
   const echoPupil = (id) => {
@@ -89,7 +98,7 @@ function Yutuqlar() {
     
           
     
-          <HEADER_NAV />
+          <HEADER_NAV school_number={data.school_number} />
           <Footer />
         </div>)
       }

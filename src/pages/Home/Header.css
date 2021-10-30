@@ -552,7 +552,7 @@ width: 100%;
   margin-top: 30px;
   margin-bottom: 30px;
 }
-form{
+.murojaat form{
   width: 75%;
   border:1px solid grey;
   height: 500px;
@@ -561,7 +561,7 @@ form{
   padding-bottom:10px;
   border-radius: 20px;
 }
-form .input_box{
+.murojaat form .input_box{
   width: 80%;
 display: flex;
   justify-content: start;
@@ -572,7 +572,7 @@ display: flex;
   border: 0px;
   padding-left:20px ;
 }
-form input{
+.murojaat form input{
   width: 80%;
   height: 35px;
   border-top-right-radius: 17.5px;
@@ -584,15 +584,15 @@ form input{
   flex: 1;
 }
 
-form input::placeholder{
+.murojaat form input::placeholder{
   color:rgb(231, 226, 226);
   margin-left: 20px;
 }
-form input:focus{
+.murojaat form input:focus{
   outline: none;
 }
 
-form textarea{
+.murojaat form textarea{
   width: 80%;
   border: none;
   background: blue;
@@ -602,23 +602,23 @@ form textarea{
   resize: none;
 }
 
-form textarea:focus{
+.murojaat form textarea:focus{
   outline: none;
 }
 form textarea::placeholder{
   color: rgb(204, 196, 196);
 }
-form h1{
+.murojaat form h1{
   color: white;
   max-width: 80%;
   text-align: center;
 }
-form p{
+.murojaat form p{
   color: rgb(206, 205, 205);
   max-width: 80%;
   text-align: center;
 }
-form button.btn-primary{
+.murojaat form button.btn-primary{
   border-radius:66.92px;
   width: 80%;
   display: flex;
@@ -626,7 +626,7 @@ form button.btn-primary{
   align-items: center;
   position: relative;
 }
-form button .rocket_icon{
+.murojaat form button .rocket_icon{
   position: absolute;
   left :10px;
 }

@@ -63,7 +63,7 @@ function Header() {
         console.log('1-School bu', res.data);
         setTimeout(() => {
           setLoader(false);
-        }, 1500);
+        }, 4000);
       })
       .catch((err) => {
         console.log('Maktabda xatolik bor');
@@ -114,7 +114,7 @@ function Header() {
         setSinf(res.data);
         setTimeout(() => {
           setLoader(false);
-        }, 1500);
+        }, 4000);
         console.log('5-', res.data);
       })
       .catch((err) => {
@@ -229,7 +229,7 @@ function Header() {
               {school.school_number + ' - ' + school.type}
               {/* Xorazm viloyati Gurlan tumani 1-ayrim fanlarga ixtisoslashtirilgan maktabi */}
             </h3>
-            <a target='_blank' href={`tel: ${school.phone}`}>
+            <a target='_blank'  href={`tel: ${school.phone}`}>
               <AiFillPhone
                 fontSize='35px'
                 color='blue'
@@ -653,7 +653,7 @@ function Header() {
           </div>
           <Footer />
 
-          <Header_nav />
+          <Header_nav school_number={school.school_number}/>
         </div>
       )}
     </div>

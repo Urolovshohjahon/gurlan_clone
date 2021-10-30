@@ -6,8 +6,6 @@ import { AiFillPhone } from 'react-icons/ai';
 import AOS from 'aos';
 import diqqat from '../../img/diqqat.jpg';
 import { ImPushpin } from 'react-icons/im';
-import tav_img from '../../img/tav_img.jpg';
-import talab from '../../img/talab.jpg';
 import axios from 'axios';
 import { url, user } from '../../host/Host';
 import school1 from '../../img/school1.jpg';
@@ -23,8 +21,9 @@ function Qabul() {
     var v = user;
     axios.get(`${url}/school-by-admin/${v}`).then((res) => {
       setSchool(res.data);
-      console.log(res.data);
-      setLoader(false);
+      setTimeout(() => {
+        setLoader(false);
+      }, 4000);
     });
   };
 
@@ -366,7 +365,7 @@ function Qabul() {
             </div>
           </div>
           <Footer />
-          <HEADER_NAV />
+          <HEADER_NAV school_number={school.school_number}/>
         </div>
       )}
     </div>

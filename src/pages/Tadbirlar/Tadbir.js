@@ -36,7 +36,7 @@ const Tadbir = (props) => {
         </div>
       </div>
       <Footer />
-      <HEADER_NAV />
+      <HEADER_NAV school_number={props.initialState.tadbir.school_number} />
     </div>
   );
 };

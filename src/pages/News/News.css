@@ -115,3 +115,11 @@
     margin-bottom: 0px;
   }
 }
+
+@media(max-width:567px) {
+  .new_card img{
+    max-width: 600px;
+    height: 100px;
+    margin-bottom: 15px;
+  }
+}

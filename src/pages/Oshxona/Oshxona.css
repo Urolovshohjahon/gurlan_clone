@@ -1,0 +1,98 @@
+.maktab_ovqatlari {
+  background: url('../../img/school18.jpg') no-repeat center center/cover;
+  min-height: 500px;
+  margin: 45px 0px;
+  position: relative;
+  padding: 40px 0px;
+}
+.maktab_ovqatlari h3 {
+  color: white;
+  font-family: 'Courgette', cursive;
+  z-index: 1;
+}
+.maktab_ovqatlari p {
+  color: white;
+  font-size: 20px;
+  font-family: 'Courgette', cursive;
+  z-index: 1;
+  max-width: 700px;
+}
+
+.maktab_ovqatlari .qabul_opacity {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    to left,
+    blue,
+    rgba(0, 0, 255, 0.692),
+    rgba(0, 0, 255, 0)
+  );
+}
+
+.faktlar {
+  color: blue;
+  font-size: 30px;
+  margin: auto;
+  font-weight: 700;
+  margin: 20px 0px 10px 0px;
+}
+
+.meal_fakt {
+  height: 250px;
+  background: blue;
+  margin: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding: 50px 20px;
+  border-radius: 10px;
+}
+.meal_fakt p {
+  color: white;
+  font-size: 17px;
+  font-weight: 500;
+  font-family: 'Patrick Hand', cursive;
+}
+
+
+.meal_card{
+    width: 100%;
+    height: 230px;
+    background: linear-gradient(to right, blue, rgb(56, 151, 196));
+    margin: 15px 0px;
+    padding: 20px 10px;
+    border-radius: 10px;
+}
+.week_day{
+    font-size: 25px;
+    color: lime;
+    font-weight: 700;
+}
+
+.meal_card h2{
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+.meal_card p{
+    color: white;
+}
+
+
+.img_box_meal{
+    overflow:hidden;
+    width: 100%;
+    height:300px;
+    border-radius: 20px;
+    border:1px solid rgb(233, 231, 231);
+    position: relative;
+    margin: 20px 0px;
+}
+.img_box_meal:hover .gallery_o{
+    opacity: 0;
+    transition: 0.3s;
+}

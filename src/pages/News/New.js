@@ -42,7 +42,7 @@ const New = (props) => {
             </div>
           </div>
           <Footer />
-          <HEADER_NAV />
+          <HEADER_NAV school_number={props.initialState.yangilik.school_number}/>
         </div>
      
   );

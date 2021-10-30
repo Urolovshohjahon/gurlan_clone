@@ -1,11 +1,17 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Header.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { NavLink } from 'react-router-dom';
 import { FaTimes } from 'react-icons/fa';
 import { BiMenuAltRight } from 'react-icons/bi';
+import { getNews } from '../../host/Config';
+import { url, user } from '../../host/Host';
+import Global from '../../host/Global';
+import axios from 'axios';
 
-function Header_nav() {
+function Header_nav(props) {
+
+  const [school, setSchool] = useState({});
   const [style, setStyle] = useState(false);
   const [bg, setBg] = useState('#06456A');
   const menu_style = {
@@ -26,6 +32,19 @@ function Header_nav() {
     listStyle:'none'
   };
 
+  const getSchool = () => {
+    axios
+      .get(`${url}/school-by-admin/${Global.user}`)
+      .then((res) => {
+        setSchool(res.data);
+        console.log('1-School bu', res.data);
+        
+      })
+      .catch((err) => {
+        console.log('Maktabda xatolik bor');
+      });
+  };
+
   const changeMenu = () => {
     setStyle(!style);
   };
@@ -33,6 +52,10 @@ function Header_nav() {
     if(window.scrollY>200){
       setBg('#0769a1')
     }
+  })
+
+  useEffect(()=>{
+    getSchool();
   })
   return (
     <div className='header_nav'>
@@ -92,7 +115,7 @@ function Header_nav() {
         <div className='container'>
           <div className='row col-12 d-flex justify-content-between'>
           <div className=' logo  col-6'>
-              <h1>1-maktab</h1>
+              <h1>{props.school_number}-maktab</h1>
             </div>
             <div className='menu  col-sm-1 col-2'>
               <BiMenuAltRight className='menu_button' onClick={changeMenu} />

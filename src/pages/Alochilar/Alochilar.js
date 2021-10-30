@@ -18,15 +18,31 @@ import Global from '../../host/Global';
 import Spinner from '../Spinner/Spinner';
 
 function Alochilar() {
+
+  const [school, setSchool] = useState({});
   const [loader, setLoader] = useState(true);
   const [excellent, setExcellent] = useState([]);
   const [pupil, setPupil] = useState([]);
   const [pupils, setPupils] = useState([]);
   const [data, setData] = useState(null);
   const [id, setId] = useState(0);
-  const [school, setSchool] = useState(null);
   const [sinf, setSinf] = useState([]);
 
+
+  const getSchool = () => {
+    axios
+      .get(`${url}/school-by-admin/${Global.user}`)
+      .then((res) => {
+        setSchool(res.data);
+        console.log('1-School bu', res.data);
+        setTimeout(() => {
+          setLoader(false);
+        }, 4000);
+      })
+      .catch((err) => {
+        console.log('Maktabda xatolik bor');
+      });
+  };
   const getExcellents = () => {
     // var a = window.location.href.split("/");
     var v = user;
@@ -34,11 +50,15 @@ function Alochilar() {
       .get(`${url}/excellent/`)
       .then((res) => {
         setExcellent(res.data);
-        setLoader(false);
+        setTimeout(() => {
+          setLoader(false);
+        }, 4000);
       })
       .catch((err) => {
         console.log(err);
-        setLoader(false);
+        setTimeout(() => {
+          setLoader(false);
+        }, 4000);
       });
     axios.get(`${url}/school-by-admin/${v}/`).then((res) => {
       setData(res.data);
@@ -88,11 +108,10 @@ function Alochilar() {
   };
 
   useEffect(() => {
+    getSchool()
     getExcellents();
     getPupils();
-    window.addEventListener('load', () => {
-      setLoader(false);
-    });
+   
   });
 
   return (
@@ -174,7 +193,7 @@ function Alochilar() {
             </div>
           </div>
           <Footer />
-          <HEADER_NAV />
+          <HEADER_NAV school_number={school.school_number} />
         </div>
       )}
     </div>
