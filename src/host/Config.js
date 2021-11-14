@@ -93,7 +93,7 @@ export const getPupils = (id) => {
 
 export const getExcellent = (id) => {
   var config = {
-    url: `${url}/excellent/${Global.schoolId}/`,
+    url: `${url}/excellent-by-school/${Global.schoolId}/`,
     method: "get",
   };
   return httpRequest(config);

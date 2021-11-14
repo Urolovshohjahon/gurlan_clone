@@ -46,8 +46,8 @@ function Alochilar() {
   const getExcellents = () => {
     // var a = window.location.href.split("/");
     var v = user;
-    axios
-      .get(`${url}/excellent/`)
+    /* axios
+      .get(`${url}/excellent-by-school/${Global.schoolId}`)
       .then((res) => {
         setExcellent(res.data);
         setTimeout(() => {
@@ -59,8 +59,24 @@ function Alochilar() {
         setTimeout(() => {
           setLoader(false);
         }, 4000);
-      });
+      }); */
     axios.get(`${url}/school-by-admin/${v}/`).then((res) => {
+      axios
+        .get(`${url}/excellent/`)
+        .then((res1) => {
+          let arrayOfExcellent=[]
+          res1.data.forEach(val=>{
+            if(val.school==res.data.id) arrayOfExcellent.push(val)
+          })
+          setExcellent(arrayOfExcellent)
+          setLoader(false)
+          /* ${idMaktab} */
+          console.log('Mana ular...', res1.data);
+        })
+        .catch((err) => {
+          console.log('err');
+         setLoader(false)
+        });
       setData(res.data);
     });
     axios
@@ -167,22 +183,22 @@ function Alochilar() {
                             <div className='flag_green'></div>
                             <img
                               src={
-                                oquvchi.image !== null ? oquvchi.image : school2
+                                item.image !== null ? item.image : school2
                               }
                             />
                           </div>
                           <div className='alochi_bottom d-flex flex-column justify-content-around'>
                             <h2>
-                              <b>O'quvchi:</b> {oquvchi.full_name}
+                              <b>O'quvchi:</b> {item.full_name}
                             </h2>
                             <h2>
                               <b>Tug'ulgan sanasi:</b>
-                              {oquvchi.birth_day}
+                              {item.birth_day}
                             </h2>
                             <h2>
-                              <b>Sinfi:</b>{' '}
-                              {echoClasses(oquvchi.clas).class_number} - "
-                              {echoClasses(oquvchi.clas).class_char}" sinf
+                              <b>Sinfi:</b>{' '} {item.clas}
+                              {/* {echoClasses(oquvchi.clas).class_number} - "
+                              {echoClasses(oquvchi.clas).class_char}" sinf */}
                             </h2>
                           </div>
                         </div>

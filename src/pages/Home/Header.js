@@ -95,16 +95,32 @@ function Header() {
   const getExcellents = () => {
     // var a = window.location.href.split("/");
     var v = user;
-    axios
-      .get(`${url}/excellent/`)
+    /* axios
+      .get(`${url}/excellent-by-school/`)
       .then((res) => {
         setExcellent(res.data);
         console.log('3', res.data);
       })
       .catch((err) => {
         console.log('excellentda xatolik...');
-      });
+      }); */
     axios.get(`${url}/school-by-admin/${v}/`).then((res) => {
+      axios
+        .get(`${url}/excellent/`)
+        .then((res1) => {
+          let arrayOfExcellent=[]
+          res1.data.forEach(val=>{
+            if(val.school==res.data.id) arrayOfExcellent.push(val)
+          })
+          setExcellent(arrayOfExcellent)
+          setLoader(false)
+          /* ${idMaktab} */
+          console.log('Mana ular...', res1.data);
+        })
+        .catch((err) => {
+          console.log('err');
+         setLoader(false)
+        });
       setData(res.data);
       console.log('4-data bu', res.data);
     });
@@ -425,13 +441,14 @@ function Header() {
                       <div className='col-lg-4 col-md-6'>
                         <div className='best_pupils_card'>
                           <img
-                            src={pupil.image !== null ? pupil.image : rasm2}
+                            src={item.image !== null ? item.image : rasm2}
                             alt='...'
                           />
-                          <h3>{pupil.full_name}</h3>
+                          <h3>{item.full_name}</h3>
                           <p>
-                            {echoClasses(pupil.clas).class_number} - "
-                            {echoClasses(pupil.clas).class_char}" sinf
+                            {item.clas}
+                            {/* {echoClasses(pupil.clas).class_number} - "
+                            {echoClasses(pupil.clas).class_char}" sinf */}
                           </p>
                           <div className='pupil_lenta'>Bizning faxrimiz</div>
                         </div>
