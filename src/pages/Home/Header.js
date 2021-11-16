@@ -337,7 +337,9 @@ function Header() {
               id='uncontrolled-tab-example'
               className='mb-3 media_tab'
             >
-              <Tab eventKey='home' title='Maktab yangiliklari'>
+              
+              <Tab eventKey='profile' title='Maktab yangiliklari'>
+                <a name='news' >
                 <div className='row d-flex justify-content-center'>
                   {news.map((val, key) => {
                     return key < 6 ? (
@@ -368,8 +370,10 @@ function Header() {
                     </a>
                   </div>
                 </div>
+                </a>
               </Tab>
-              <Tab eventKey='profile' title='Media sayohat'>
+              
+              <Tab eventKey='home' title='Media sayohat'>
                 <div className='row d-flex justify-content-center'>
                   <div className='col-lg-6'>
                     <YouTube
@@ -403,10 +407,10 @@ function Header() {
             </Tabs>
           </div>
           <div className='qabul'>
-            <div className='container'>
+            <div className='container' id='qabul'>
               <div className='row'>
                 <div className='col-lg-6 d-flex flex-column justify-content-around align-items-start'>
-                  <h1>Qabul uchun ariza topshiring</h1>
+                  <h1 >Qabul uchun ariza topshiring</h1>
                   <span>Kuzgi qabul jarayoni hozir mavjud</span>
                   <p>
                     Biz o'quvchilarimizga shunchaki ta'lim beribgina qolmasdan,
@@ -430,7 +434,7 @@ function Header() {
           </div>
           <div className='container'>
             <div className='row d-flex justify-content-around'>
-            <div className="col-lg-12">
+            <div className="col-lg-12" id='alochilar'>
                 <h2 className="maktab_tadbirlari">A'lochilar doskasi</h2>
               </div>
               {excellent !== [] && sinf !== []

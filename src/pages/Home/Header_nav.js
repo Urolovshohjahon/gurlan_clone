@@ -62,46 +62,46 @@ function Header_nav(props) {
       <ul style={menu_style} id='yon_menu'>
         <FaTimes className='close' onClick={changeMenu} />
         <li>
-          <a
+          <NavLink
             onClick={changeMenu}
-            href='/'
+            to='/'
             className='text-decoration-none'
           >
             Bosh sahifa
-          </a>
+          </NavLink>
         </li>
         <li>
-          <a
+          <NavLink
             onClick={changeMenu}
-            href='/hayot'
+            to='/hayot'
             className='text-decoration-none'
           >
             Maktab hayoti
-          </a>
+          </NavLink>
         </li>
         <li>
           <a
             onClick={changeMenu}
-            href='/qabul'
+            href='/#qabul'
             className='text-decoration-none'
           >
             Qabul
           </a>
         </li>
         <li>
-          <a onClick={changeMenu} href='/news' className='text-decoration-none'>
+          <a onClick={changeMenu} href='/#news' className='text-decoration-none'>
             Yangiliklar
           </a>
         </li>
         <li>
-          <a onClick={changeMenu} href='/rahbariyat' className='text-decoration-none'>
+          <NavLink onClick={changeMenu} to='/rahbariyat' className='text-decoration-none'>
             Maktab ma'muriyati
-          </a>
+          </NavLink>
         </li>
         <li>
           <a
             onClick={changeMenu}
-            href='/alochilar'
+            href='/#alochilar'
             className='text-decoration-none'
           >
             Maktab a'lochilari
@@ -134,14 +134,14 @@ function Header_nav(props) {
                 </NavLink>
               </li>
               <li>
-                <NavLink to='/qabul' className='text-decoration-none'>
+                <a href='/#qabul' className='text-decoration-none'>
                   Qabul
-                </NavLink>
+                </a>
               </li>
               <li>
-                <NavLink to='/news' className='text-decoration-none'>
+                <a href='/#news' className='text-decoration-none'>
                   Yangiliklar
-                </NavLink>
+                </a>
               </li>
               <li>
                 <NavLink to='/rahbariyat' className='text-decoration-none'>
@@ -149,9 +149,9 @@ function Header_nav(props) {
                 </NavLink>
               </li>
               <li>
-                <NavLink to='/alochilar' className='text-decoration-none'>
+                <a href='/#alochilar' className='text-decoration-none'>
                   Maktab a'lochilari
-                </NavLink>
+                </a>
               </li>
             </ul>
             </div>

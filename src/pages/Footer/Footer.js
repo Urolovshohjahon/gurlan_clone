@@ -8,7 +8,6 @@ import { getNews } from '../../host/Config';
 import { url, user } from '../../host/Host';
 import axios from 'axios';
 import Global from '../../host/Global';
-import { Clock } from '../Clock';
 
 function Footer() {
   const [loader, setLoader] = useState(true);
