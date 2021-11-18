@@ -462,6 +462,13 @@ function Header() {
                 : ''}
             </div>
             <div className="row">
+            <div className='col-md-5'>
+                <a href='/alochilar' className='tadbir_link'>
+                  Hammasini ko'rish <AiOutlineDoubleRight />
+                </a>
+              </div>
+            </div>
+            <div className="row">
               <div className="col-lg-12">
                 <h2 className="maktab_tadbirlari">Ustozlar doskasi</h2>
               </div>

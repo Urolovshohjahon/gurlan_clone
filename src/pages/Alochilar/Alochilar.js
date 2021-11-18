@@ -144,7 +144,7 @@ function Alochilar() {
               alt=''
             />
             <div className='parda'></div>
-            <h3>Maktab a'lochilari bilan tanishing</h3>
+            <h3 >Maktab a'lochilari bilan tanishing</h3>
             <a href={`tel: ${data !== null ? data.phone : '#'}`}>
               <AiFillPhone
                 fontSize='35px'
@@ -157,12 +157,7 @@ function Alochilar() {
           <div className='container'>
             <div className='row d-flex justify-content-center'>
               <h1
-                style={{
-                  fontFamily: 'Courgette, cursive',
-                  margin: '0',
-                  fontSize: '60px',
-                  width: 'auto',
-                }}
+                className='alochi_header'
               >
                 A'lochilar doskasi
               </h1>
@@ -181,11 +176,13 @@ function Alochilar() {
                             <div className='flag_white'></div>
                             <div className='flag_red'></div>
                             <div className='flag_green'></div>
+                            <div className="alochi_box">
                             <img
                               src={
                                 item.image !== null ? item.image : school2
                               }
                             />
+                            </div>
                           </div>
                           <div className='alochi_bottom d-flex flex-column justify-content-around'>
                             <h2>

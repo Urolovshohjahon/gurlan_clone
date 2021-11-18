@@ -737,8 +737,8 @@ form textarea::placeholder{
 
 
 @media(max-width:767px){
-  form{
-    width: 95%;
+  .murojaat form{
+    width: 100%;
   }
   .header_main {
     height: 500px;
