@@ -82,7 +82,7 @@ function Header_nav(props) {
         <li>
           <a
             onClick={changeMenu}
-            href='/#qabul'
+            href='/qabul'
             className='text-decoration-none'
           >
             Qabul
@@ -134,7 +134,7 @@ function Header_nav(props) {
                 </NavLink>
               </li>
               <li>
-                <a href='/#qabul' className='text-decoration-none'>
+                <a href='/qabul' className='text-decoration-none'>
                   Qabul
                 </a>
               </li>
